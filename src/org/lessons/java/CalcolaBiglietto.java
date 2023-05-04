@@ -23,7 +23,7 @@ public class CalcolaBiglietto {
 		}else {
 			total = Integer.valueOf(kmStr) * kmPrice;
 		}
-		System.out.print(Math.round(total * 100.0) / 100.0 + "€");
+		System.out.print(String.format("%.2f", total) + "€");
 		input.close();
 
 	}
